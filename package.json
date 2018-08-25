@@ -1,0 +1,24 @@
+{
+  "name": "leonidas",
+  "version": "1.0.0",
+  "description": "Client managment and discovery server",
+  "main": "client.js",
+  "repository": "",
+  "dependencies": {
+    "bonjour": "^3.5.0",
+    "express": "^4.16.3",
+    "node-cleanup": "^2.1.2",
+    "request": "^2.88.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "systeminformation": "^3.42.9",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
