@@ -1,0 +1,10 @@
+<a (click)="toggle()">
+  CPU
+  <i class="fa fa-lg fa-plus"></i>
+</a>
+<div *ngIf="show">
+  <p>CPU Load {{ cpuData?.currentload }}</p>
+</div>
+<div [hidden]="!chart">
+    <canvas id="cpu-canvas">{{ chart }}</canvas>
+</div>

@@ -1,0 +1,14 @@
+<a (click)="toggle()">
+  Network
+  <i class="fa fa-lg fa-plus"></i>
+</a>
+<div *ngIf="show">
+  <p>{{ networkData?.iface}}</p>
+  <p>rx: {{ networkData?.rx}}</p>
+  <p>tx: {{ networkData?.tx}}</p>
+  <p>rx_sec: {{ networkData?.rx_sec}}</p>
+  <p>tx_sec: {{ networkData?.tx_sec}}</p>
+</div>
+<div [hidden]="!chart">
+    <canvas id="network-canvas">{{ chart }}</canvas>
+</div>

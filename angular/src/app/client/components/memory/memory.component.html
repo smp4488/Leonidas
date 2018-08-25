@@ -1,0 +1,10 @@
+<a (click)="toggle()">
+    Memory
+    <i class="fa fa-lg fa-plus"></i>
+  </a>
+  <div *ngIf="show">
+    <p>Memory</p>
+  </div>
+  <div [hidden]="!chart">
+      <canvas id="canvas">{{ chart }}</canvas>
+  </div>

@@ -1,0 +1,28 @@
+<i class="fa fa-lg fa-{{ client.osInfo?.logofile }}"></i>
+<h1>{{client.host}}</h1>
+
+<div class="card">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <app-network></app-network>
+      </li>      
+      <li class="list-group-item">
+          <app-cpu></app-cpu>
+        </li>
+      <li class="list-group-item">
+        <app-memory></app-memory>
+      </li>
+      <li class="list-group-item">
+        <app-disk></app-disk>
+      </li>
+    </ul>
+</div>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let key of objectKeys(client)">
+    {{key + ' : ' + client[key]}}
+  </li>
+</ul>
+
+<!-- <ul class="list-group">
+  <li class="list-group-item" *ngFor="let value of staticData | values">{{value}}</li>
+</ul> -->

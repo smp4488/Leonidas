@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;" *ngFor="let client of clients">
+  <div class="card-body">
+    <i class="fa fa-{{ client.osInfo.logofile }}"></i>
+    <a [routerLink]="['/client/', client.name ]">
+      <h5 class="card-title">{{client.host }}</h5>
+    </a>
+    <div><strong>IP Address:</strong> {{ client.referer.address }}</div>
+    <div><strong>Distro:</strong> {{ client.osInfo.distro }}</div>
+    <div><strong>Kernel:</strong> {{ client.osInfo.kernel }}</div>
+  </div>
+</div>

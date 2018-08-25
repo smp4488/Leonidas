@@ -1,0 +1,11 @@
+<a (click)="toggle()">
+  Disk
+  <i class="fa fa-lg fa-plus"></i>
+</a>
+<div *ngIf="show">
+  <p>Disk</p>
+</div>
+<div [hidden]="!chart">
+    <canvas id="canvas">{{ chart }}</canvas>
+</div>
+  

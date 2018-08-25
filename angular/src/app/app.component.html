@@ -1,0 +1,32 @@
+<!-- Header -->
+<nav class="navbar navbar-dark bg-dark mb-5">
+  <a class="navbar-brand" href="/">{{ title }}</a>
+  <div class="navbar-expand mr-auto">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" routerLink="" routerLinkActive="active">Clients</a>
+      </div>
+  </div>
+  <div class="navbar-expand ml-auto navbar-nav">
+      <div class="navbar-nav">
+      <a class="nav-item nav-link" href="https://github.com/smp4488" target="_blank">
+          <i class="fa fa-github"></i>
+      </a>
+      <a class="nav-item nav-link" href="https://twitter.com/smp4488" target="_blank">
+          <i class="fa fa-twitter"></i>
+      </a>
+      </div>
+  </div>
+</nav>
+
+<!-- Content -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+
+<!-- Footer -->
+<nav class="navbar navbar-dark bg-dark mt-5 fixed-bottom">
+  <div class="navbar-expand m-auto navbar-text">
+      Made with <i class="fa fa-gears"></i> by <a href="https://twitter.com/smp4488">smp4488</a>
+  </div>
+</nav>
